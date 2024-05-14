@@ -4,23 +4,61 @@ const roombookmodel = new mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "user"
+      ref: "user",
+      
     },
     room: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "roomcreate"
+      ref: "roomcreate",
+      
     },
     checkin: {
-      type: Date
+      type: Date,
+      
     },
     checkout: {
-      type: Date
+      type: Date,
+      
     },
     rooms: {
-      type: Number
+      type: Number,
+      
     },
     guests: {
-      type: Number
+      type: Number,
+      
+    },
+    nameoncard: {
+      type: String,
+      
+    },
+    cardnumber: {
+      type: String,
+      
+    },
+    expiry: {
+      type: String,
+      
+    },
+    cvc: {
+      type: String,
+      
+    },
+    address: {
+      type: String,
+      
+    },
+    city: {
+      type: String,
+      
+    },
+    state: {
+      type: String,
+      
+    },
+    postalcode: {
+      type: String,
+      
     }
   },
   {
